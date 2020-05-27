@@ -3,7 +3,7 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+  <% if(!enhanced_cart.empty?) %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -48,5 +48,7 @@
       <% end %>
     </div>
   </div>
-
+<% else %>
+<h3 class="alert-info text-center">You don't have anything in your cart yet!</h3>
+<% end %>
 </section>
